@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>tubeJay</title>
+    <link rel="stylesheet" href="css/tubejay.css" />
+    <link rel="stylesheet" href="css/ui.slider.css" />
+</head>
+<body>
+<div id="display">
+    <div class="vidholder">
+        <div class="playlist" id="pl2">
+        </div> 
+	<div id="cur2">
+
+		<div id="cur2vid"></div>
+		<div id="cur2scrub" class="scrubber"></div>
+	</div>
+	<div class="video">
+	        <div id="video2"></div>
+	</div>
+    </div>
+
+    <div class="vidholder">
+
+        <div class="playlist" id="pl1">
+        </div>    
+	<div id="cur1">
+		<div id="cur1vid"></div>
+		<div id="cur1scrub" class="scrubber"></div>
+	</div>            
+	<div class="video">
+	        <div id="video1"></div>
+	</div>
+    </div>
+
+</div>
+<div id="controls">
+    <div id="controls1">
+        <div id="volfade1"></div>
+        <button id="playpause1">Play</button>
+    </div>
+    <div id="crossfaderholder">
+        <div id="crossfader">&nbsp;</div>
+    </div>
+
+    <div id="controls2">
+        <button id="playpause2">Play</button>
+        <div id="volfade2"></div>
+    </div>
+</div>
+<div id="search">
+<div>
+    <input type="text" id="searchtext" /><br />
+    <button id="searchbutton">S&oslash;g</button>
+
+</div>
+<div id="pages"></div>
+<div id="results">
+
+</div>
+</div>
+    <script src="http://www.google.com/jsapi"></script> 
+    <script> 
+        google.load("swfobject", "2.1");
+        google.load("jquery", "1.3.2");
+        google.load("jqueryui", "1.7.2");
+
+        function search_loaded() { return true; }
+        google.load('search','1', {'callback': search_loaded});
+    </script> 
+    <script src="js/tubejay.js"> </script>
+</body>
+</html>
