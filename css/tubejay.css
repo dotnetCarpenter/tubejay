@@ -1,0 +1,219 @@
+html {
+    overflow : hidden;
+}
+
+body {
+    background : rgba(0,0,0,0.9);
+    overflow : hidden;
+    cursor  : default;
+}
+
+#controls {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    right : 0;
+}
+
+#controls1 {
+    height : 20px;
+}
+
+#controls2 {
+    height : 20px;
+}
+
+#controls {
+    padding : 5px 10px 10px 10px;
+    margin : 0 auto;
+    width : 660px;
+    text-align : center;
+    background : rgba(140,140,140,0.4);
+    -moz-border-radius : 5px 5px 0px 0px;
+    -webkit-border-radius : 5px 5px 0px 0px;
+}
+
+#controls > div {
+    width : 200px;
+    float : left;
+    margin : 0 10px;
+}
+
+#crossfader {
+    margin-top : 6px;
+    width : 200px;
+    height : 10px;
+}
+
+#crossfader .ui-slider-handle {
+}
+
+#volfade1, 
+#volfade2
+{
+    position : absolute;
+    top : 6px;
+    left : 6px;
+    width   :   60px;
+    height  :   10px;
+}
+
+#volfade2 
+{
+    left : auto;
+    right : 6px;
+}
+
+#volfade1 .ui-slider-handle,
+#volfade2 .ui-slider-handle
+{
+    width   :  8px;
+    height : 17px;
+}
+
+#cur1, #cur2 {
+    position : absolute;
+    bottom : 300px;
+    left : 20px;
+    right : 20px;
+    background : rgba(0,0,0,0.4);
+    height : 64px;
+    -webkit-border-radius : 4px;
+    -moz-border-radius : 4px;
+}
+
+#search {
+    position : absolute;
+    left : -240px;
+    top:0;
+    bottom :0;
+    width : 260px;
+    background : rgba(82,82,82,0.9);
+    opacity : 0.2;
+    z-index : 1000;
+}
+
+#search:hover {
+    left : 0;
+    opacity : 1.0;
+}
+
+#pages {
+    margin : 6px 8px;
+}
+
+#pages .pages .page {
+    margin : 0 2px;
+}
+
+#pages .pages a.page {
+    cursor : pointer;
+}
+
+#searchtext {
+    font-size : 1.22em;
+    color : #000;
+    padding : 4px 6px;
+    outline : 0;
+    border : 2px rgba(0,0,0,0) solid;
+    -webkit-border-radius : 6px;
+    -moz-border-radius : 6px;
+    background : rgba(109,109,109,0.9);
+    width: 240px;
+    margin : 10px;
+}
+
+#searchtext:focus {
+    border : 2px rgba(123,155,155,0.6) solid;
+}
+
+#searchbutton {
+    width : 240px;
+    margin : 0px 10px;
+    padding : 10px;
+}
+
+.dragresult {
+    display : block;
+    background  : rgba(220,220,210,0.9);
+    -webkit-border-radius : 3px;
+    -moz-border-radius : 3px;
+    border : 1px rgba(14,14,14,0.7);
+    padding : 4px;
+    margin : 4px;
+    font-size : 10px;
+    color : #222;
+    overflow : hidden;
+}
+
+.dragresult img {
+    float : left;
+    margin : 0 8px 0 0;
+}
+
+.playnow {
+    float : right;
+    background : rgba(0,0,0,0.4);
+    width : 40px;
+    height : 40px;
+    -webkit-border-radius : 20px;
+    -moz-border-radius : 20px;
+    font-size : 3em;
+    font-weight : bold;    
+    text-align  :center;
+    vertical-align : center;
+    display : none;
+}
+
+.playlist > div.dragresult:hover .playnow{
+    display : block;
+}
+
+.vidholder {
+    position : relative;
+    float : right;
+    width : 48%;
+    height : 90%;
+    background : rgba(123,141,145,0.2);
+    margin : 1%;
+    -webkit-border-radius : 6px;
+    -moz-border-radius : 6px;
+}
+
+.video {
+    position : absolute;
+    bottom : 0px;
+    width : 96%;
+    margin : 2%;
+    height : 280px;
+    background : #000;
+}
+
+.playlist {
+    position : absolute;
+    top  :0;
+    bottom : 280px;
+    width : 96%;
+    margin : 2%;
+
+    background : rgba(20,20,20,0.7);
+}
+
+#cur1scrub,
+#cur2scrub {
+    position : absolute;
+    bottom : 2px;
+    left : 4px;
+    right : 4px;
+    height : 4px;
+    opacity : 0.5;
+    background : #111;
+}
+
+#cur1scrub .ui-slider-handle,
+#cur2scrub .ui-slider-handle {
+    background : #eee;
+    margin  : 4px 0 0 -4px;
+    height  : 4px;
+    width   : 4px;
+}
