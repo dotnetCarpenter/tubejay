@@ -170,6 +170,10 @@ window.onload = function() {
     $('#searchbutton').bind('click', function() {
         searcher.execute( $('#searchtext').val() );
     });
+    $('#searchtext').keyup(function(e) {
+        if(e.keyCode == 13) { searcher.execute( $('#searchtext').val() ); }
+    });
+    
 };
 
 
