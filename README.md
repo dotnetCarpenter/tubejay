@@ -3,6 +3,7 @@ The code was originally developed by [halfd](http://github.com/halfd "halfd's gi
 
 <strong>Ideas for futher development:</strong>
 
-+  Implement search for myspace.com videos
-+  Auto play (for continues play-back on slow Internet connections)
-+  HTML5 canvas
++  See <mockups/ide3.bmml>
+
+** LICENSE
+[WTFPL](http://www.wtfpl.net/) <LICENSE>
