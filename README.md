@@ -3,7 +3,7 @@ The code was originally developed by [halfd](http://github.com/halfd "halfd's gi
 
 <strong>Ideas for futher development:</strong>
 
-+  See <mockups/ide3.bmml>
++  See [the mockup](mockups/ide3.bmml)
 
 ** LICENSE
-[WTFPL](http://www.wtfpl.net/) <LICENSE>
+[WTFPL](http://www.wtfpl.net/) [LICENSE](LICENSE)
